@@ -105,9 +105,6 @@ class SlotMachine {
     }
 
     async spin(spins = this.randomInt()){
-        this.meshes.forEach(e => {
-            e.rotation.x = 0.62832 * ((this.randomInt() + 1) / 16) + 0.62832
-        })
         this.spinable = true
         const animate = () => {
             requestAnimationFrame(animate)
